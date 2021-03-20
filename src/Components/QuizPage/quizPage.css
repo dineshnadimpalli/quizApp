@@ -1,0 +1,51 @@
+
+.quizPageTimer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quizPageHeaderSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.quizPageContainer {
+    margin: 40px;
+    margin-top: 10px;
+}
+
+.questionsOverview {
+    color: gray;
+}
+
+.question {
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.optionText {
+    padding: 10px;
+}
+
+[class|='answer-value'] {
+    padding: 10px 0;
+}
+
+[class|='answer-value']:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+[class|='answer-value']:hover > label {
+    cursor: pointer;
+}
