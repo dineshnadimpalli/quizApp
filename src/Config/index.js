@@ -198,11 +198,11 @@ const correctAnsForQuizQues = {
             },
             {
                 "ques_id": 8,
-                "correct_option": "Vatican City"
+                "correct_option": "India"
             },
             {
                 "ques_id": 9,
-                "correct_option": "Lawn Tennis"
+                "correct_option": "Tennis"
             },
             {
                 "ques_id": 10,
