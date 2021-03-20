@@ -1,0 +1,133 @@
+.quizCard {
+    width: 80%;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.quizCard:hover {
+    box-shadow: 1px 2px 20px gray;
+    transform: scale(1.02, 1.02);
+}
+
+.quizCardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizHeaderSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.quizDescription {
+    margin-top: 20px;
+}
+
+[class|="start-quiz"] {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 4px 1px grey;
+    background-color: green;
+    color: white;
+    font-size: medium;
+}
+
+[class|="start-quiz"]:focus {
+    outline: none;
+}
+
+[class|="quiz-list"] {
+    margin-bottom: 10px;
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: -468px 0
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: 468px 0
+    }
+}
+
+.title-skeleton {
+    width: 40%;
+    height:20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    /* float: left; */
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    background: #fff;
+    z-index: 10;
+    padding: 0px;
+    opacity: 1
+}
+
+.title-skeleton.hidden {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    height: 0;
+    padding: 0
+}
+
+.description-skeleton {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+    /* float: left; */
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    background: #fff;
+    z-index: 10;
+    padding: 0px;
+    opacity: 1
+}
+
+.description-skeleton.hidden {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    height: 0;
+    padding: 0
+}
+
+
+.animated-background {
+    will-change: transform;
+    animation: placeHolderShimmer 1s linear infinite forwards;
+    background: #e6e6e6;
+    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 800px 104px;
+    height: 100%;
+    position: relative
+}
+
+.skel-mask {
+    background: #fff;
+    position: absolute;
+    z-index: 200
+}
+
+.skel-mask-1 {
+    width: 100%;
+    height: 15px;
+    top: 0;
+    left: 0
+}
