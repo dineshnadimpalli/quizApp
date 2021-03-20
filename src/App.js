@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Routes from './Router';
+import logo from './Assets/skuad_logo.png'
 
 function App() {
+  // console.log("==", process.env);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='appbar'>
+        <div className='logoAppbarSection' onClick={()=>window.location.href='/'}>
+          {/* <img src={logo} className='appLogo' /> */}
+          <span className='subtitle'>
+            Skill Test
+          </span>
+        </div>
+      </div>
+      <Routes />
     </div>
   );
 }
