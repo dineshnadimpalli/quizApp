@@ -1,0 +1,55 @@
+.resultsSection {
+    padding: 20px;
+}
+
+.fetchResultsSection {
+    padding: 20px;
+}
+
+.questionsContainer {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+[class|='question'] {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+[class|='submitted-answer'] {
+    padding: 5px 0;
+}
+
+[class|='submitted-answer'] > span {
+    font-weight: bold;
+}
+
+[class|='correct-answer'] {
+    padding: 5px 0;
+}
+
+[class|='correct-answer'] > span {
+    font-weight: bold;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    border-bottom: 1px solid gray;
+}
+
+.righttickImage {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    transform: rotate(10deg);
+}
+
+.wrongtickImage {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
